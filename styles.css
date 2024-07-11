@@ -7,12 +7,15 @@
 
 body {
     line-height: 1.6;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, #4CAF50, #2E8B57);
     color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 header {
-    background-color: #c45d18ab;
+    background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон для лучшей читаемости */
     color: white;
     padding: 1rem 0;
     text-align: center;
@@ -44,6 +47,7 @@ section {
     max-width: 800px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1; /* Чтобы секции занимали всю доступную высоту */
 }
 
 section h2 {
